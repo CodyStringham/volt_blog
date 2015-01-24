@@ -1,6 +1,5 @@
 # By default Volt generates this controller for your Main component
 class MainController < Volt::ModelController
-  model :store
 
   def index
     # Add code for when the index view is loaded
@@ -11,19 +10,20 @@ class MainController < Volt::ModelController
   end
 
 
-
-
   private
 
-  def add_item
-    _items << { name: page._new_item, creator: page._new_item_creator }
-    page._new_item = ''
-    page._new_item_creator = ''
-  end
+  # def add_item
+  #   _items << Item.new(name: page._name, creator: page._creator)
+  #   _name = ''
+  #   _creator = ''
+  #   else
+  #     flash._errors << "Unable to save because you're not on the internet"
+  #   end
+  # end
 
-  def remove_item(item)
-    _items.delete(item)
-  end
+  # def remove_item(item)
+  #   _items.delete(item)
+  # end
 
   # The main template contains a #template binding that shows another
   # template.  This is the path to that template.  It may change based

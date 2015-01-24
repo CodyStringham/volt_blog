@@ -4,5 +4,8 @@
 # bootstrap css framework
 component 'bootstrap'
 
+# volt validation
+component 'fields'
+
 # provides templates for login, signup, and logout
 # component 'user-templates'

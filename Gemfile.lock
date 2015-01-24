@@ -1,3 +1,33 @@
+GIT
+  remote: git://github.com/voltrb/volt.git
+  revision: 8b16a2d986c28ba6fecb47cef67a7790053604fb
+  branch: master
+  specs:
+    volt (0.8.27.beta2)
+      bcrypt (~> 3.1.9)
+      bundler (>= 1.5)
+      capybara (~> 2.4.2)
+      chromedriver2-helper (~> 0.0.8)
+      configurations (~> 2.0.0.pre)
+      listen (~> 2.8.0)
+      mongo (~> 1.9.0)
+      opal (~> 0.6.0)
+      opal-jquery (~> 0.2.0)
+      opal-rspec (= 0.3.0.beta3)
+      poltergeist (~> 1.5.0)
+      pry (~> 0.10.0)
+      rack (~> 1.5.0)
+      rake (~> 10.0.4)
+      rspec-core (~> 3.1.0)
+      rspec-expectations (~> 3.1.0)
+      sass (~> 3.2.5)
+      selenium-webdriver (~> 2.43.0)
+      sprockets-sass (~> 1.0.0)
+      thor (~> 0.19.0)
+      uglifier (>= 2.4.0)
+      volt-sockjs (~> 0.3.4.4)
+      yui-compressor (>= 0.12.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -55,9 +85,9 @@ GEM
       cliver (~> 0.3.1)
       multi_json (~> 1.0)
       websocket-driver (>= 0.2.0)
-    pry (0.9.12.6)
-      coderay (~> 1.0)
-      method_source (~> 0.8)
+    pry (0.10.1)
+      coderay (~> 1.1.0)
+      method_source (~> 0.8.1)
       slop (~> 3.4)
     rack (1.5.2)
     rack-mount (0.8.3)
@@ -103,31 +133,8 @@ GEM
     uglifier (2.7.0)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
-    volt (0.8.26)
-      bcrypt (~> 3.1.9)
-      bundler (>= 1.5)
-      capybara (~> 2.4.2)
-      chromedriver2-helper (~> 0.0.8)
-      configurations (~> 2.0.0.pre)
-      listen (~> 2.8.0)
-      mongo (~> 1.9.0)
-      opal (~> 0.6.0)
-      opal-jquery (~> 0.2.0)
-      opal-rspec (= 0.3.0.beta3)
-      poltergeist (~> 1.5.0)
-      pry (~> 0.9.12.0)
-      rack (~> 1.5.0)
-      rake (~> 10.0.4)
-      rspec-core (~> 3.1.0)
-      rspec-expectations (~> 3.1.0)
-      sass (~> 3.2.5)
-      selenium-webdriver (~> 2.43.0)
-      sprockets-sass (~> 1.0.0)
-      thor (~> 0.19.0)
-      uglifier (>= 2.4.0)
-      volt-sockjs (~> 0.3.4.4)
-      yui-compressor (>= 0.12.0)
     volt-bootstrap (0.0.8)
+    volt-fields (0.0.12)
     volt-sockjs (0.3.4.4)
       faye-websocket (~> 0.7.1)
       json
@@ -147,6 +154,9 @@ PLATFORMS
 
 DEPENDENCIES
   bson_ext (~> 1.9.0)
+  jubilee
   thin (~> 1.6.0)
-  volt (= 0.8.26)
+  volt!
   volt-bootstrap
+  volt-fields
+  volt-sockjs

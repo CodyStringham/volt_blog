@@ -1,0 +1,27 @@
+<:Title>
+  {{ if loaded? }}
+    {{ _title }}
+  {{ end }}
+
+<:Body>
+  <h1>{{ _title }}</h1>
+  <p>{{ _body }}</p>
+
+  <a href="/blog/{{ _id }}/edit" class="btn btn-default btn-xs">edit</a>
+
+
+<!-- <:Body>
+  {{ if loaded? }}
+    <h1>{{ _title }}</h1>
+
+    <p>{{ _body }}</p>
+
+    {{ model._comments.each do |comment| }}
+      <:comments comment="{{ comment }}" />
+    {{ end }}
+
+    <:comments:new post="{{ model }}" />
+
+  {{ else }}
+    <p>Loading... {{ model.html_inspect }}</p>
+  {{ end }} -->

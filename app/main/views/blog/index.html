@@ -1,0 +1,18 @@
+<:Title>
+  Volt Blog
+
+<:Body>
+  <h1>Volt Blog</h1>
+  <a href="/blog/new" class="btn btn-primary">New Post</a>
+
+
+  {{ _posts.each do |post| }}
+    <h2><a href="/blog/{{ post._id }}">{{ post._title }}</a></h2>
+    <p>{{ post._body }}</p>
+
+    <div class="btn-group" role="group">
+      <a href="/blog/{{ post._id }}/edit" class="btn btn-default btn-xs">edit</a>
+      <a e-click="_posts.delete(post)" class="btn btn-default btn-xs">remove</a>
+    </div>
+
+  {{ end }}
