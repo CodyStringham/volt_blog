@@ -9,6 +9,10 @@ class MainController < Volt::ModelController
     # Add code for when the about view is loaded
   end
 
+  def account
+    # Add code for when the account view is loaded
+  end
+
 
   private
 

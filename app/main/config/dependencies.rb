@@ -8,4 +8,4 @@ component 'bootstrap'
 component 'fields'
 
 # provides templates for login, signup, and logout
-# component 'user-templates'
+component 'user-templates'

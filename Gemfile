@@ -4,8 +4,7 @@ ruby '2.1.5'
 gem 'volt', github: 'voltrb/volt', branch: 'master'
 gem 'volt-bootstrap'
 gem 'volt-fields'
-
-# gem 'volt-user-templates'
+gem 'volt-user-templates'
 
 # Server for MRI
 platform :mri do
